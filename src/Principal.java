@@ -4,16 +4,20 @@ public class Principal {
         miPelicula.nombre = "Encanto";
         miPelicula.fecheDeLanzamiento = 2021;
         miPelicula.duracionEnMinutos = 120;
+        miPelicula.duracionEnMinutos = 120;
 
-        System.out.println("Mi pelicula es : " + miPelicula.nombre);
-        System.out.println("Su fecha de lanzamiento es : " + miPelicula.fecheDeLanzamiento);
+        miPelicula.muestraFichaTecnica();
+        miPelicula.evalua(7.8);
+        miPelicula.evalua(18);
+        System.out.println(miPelicula.sumaDeLasEvaluaciones);
+
+
         Pelicula otraPelicula = new Pelicula();
         otraPelicula.nombre= "Matrix";
         otraPelicula.fecheDeLanzamiento  = 1998;
         otraPelicula.duracionEnMinutos = 180;
 
-        System.out.println("Mi pelicula es : " + otraPelicula.nombre);
-        System.out.println("Su fecha de lanzamiento es : " + otraPelicula.fecheDeLanzamiento);
+        //otraPelicula.muestraFichaTecnica();
 
 
     }
