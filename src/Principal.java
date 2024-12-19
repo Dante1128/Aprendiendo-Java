@@ -4,12 +4,13 @@ public class Principal {
         miPelicula.nombre = "Encanto";
         miPelicula.fecheDeLanzamiento = 2021;
         miPelicula.duracionEnMinutos = 120;
-        miPelicula.duracionEnMinutos = 120;
 
         miPelicula.muestraFichaTecnica();
-        miPelicula.evalua(7.8);
-        miPelicula.evalua(18);
+        miPelicula.evalua(10);
+        miPelicula.evalua(10);
         System.out.println(miPelicula.sumaDeLasEvaluaciones);
+        System.out.println(miPelicula.totalDeLasEvaluaciones);
+        System.out.println(miPelicula.calculaMedia());
 
 
         Pelicula otraPelicula = new Pelicula();
