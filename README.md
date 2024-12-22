@@ -1,1 +1,1 @@
-Aprendijage de con Java rumbo a ser un desarrollador back-end es pero me vaya bien si lees esto danto lo logramos . Uwu
+Este proyecto trata de una tienda de peliculas, el cual nos podra mostrar las caracteristicas de las peliculas o series .
