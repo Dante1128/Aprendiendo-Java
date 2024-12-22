@@ -1,6 +1,8 @@
+import com.aluracursos.screenmach.modelos.Episodio;
 import com.aluracursos.screenmach.modelos.Pelicula;
 import com.aluracursos.screenmach.modelos.Serie;
 import com.aluracursos.screenmacth.calculos.CalculadoraDeTiempo;
+import com.aluracursos.screenmacth.calculos.FiltroRecomendacion;
 
 public class Principal {
     public static void main(String[] args) {
@@ -38,6 +40,17 @@ public class Principal {
         calculadora.incluye(otraPelicula);
         System.out.println("Tiempo necesario para ver tus titulos favoritos en estas vacaciones "
                 +calculadora.getTiempoTotal() + " min");
+
+        FiltroRecomendacion filtroRecomendacion =  new FiltroRecomendacion();
+        filtroRecomendacion.filtra(miPelicula);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setNombre("La casa Targaryen");
+        episodio.setSerie(casaDragon);
+        episodio.setTotalDeVisualizaciones(50);
+        filtroRecomendacion.filtra(episodio);
+
 
 
 
