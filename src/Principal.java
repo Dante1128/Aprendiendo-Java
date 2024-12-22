@@ -46,7 +46,7 @@ public class Principal {
 
         Episodio episodio = new Episodio();
         episodio.setNumero(1);
-        episodio.setNombre("La casa Targaryeneeeeeeeeeee");
+        episodio.setNombre("La casa Targaryeneeeeeeeeeeesaradfdfd");
         episodio.setSerie(casaDragon);
         episodio.setTotalDeVisualizaciones(50);
         filtroRecomendacion.filtra(episodio);
