@@ -6,10 +6,11 @@ public class Pelicula extends Titulo implements Clasificacion {
 
    private String director;
 
-    public Pelicula(String nombre) {
-        this.setNombre(nombre);
-    }
 
+
+    public Pelicula(String nombre, int fecheDeLanzamiento) {
+        super(nombre, fecheDeLanzamiento);
+    }
 
 
     public String getDirector() {

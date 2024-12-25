@@ -1,9 +1,14 @@
 package com.aluracursos.screenmach.modelos;
 
 public class Serie extends Titulo{
-    int temporadas;
-    int episodiosPorTemporada;
-    int minutosPorEpisodio;
+    private int temporadas;
+    private int episodiosPorTemporada;
+    private int minutosPorEpisodio;
+    private boolean activa;
+
+    public Serie(String nombre, int fecheDeLanzamiento) {
+        super(nombre, fecheDeLanzamiento);
+    }
 
     @Override
     public int getDuracionEnMinutos() {

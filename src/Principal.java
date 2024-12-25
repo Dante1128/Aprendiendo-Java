@@ -9,9 +9,7 @@ import java.util.Objects;
 
 public class Principal {
     public static void main(String[] args) {
-        Pelicula miPelicula = new Pelicula("Encanto");
-
-        miPelicula.setFecheDeLanzamiento(2021);
+        Pelicula miPelicula = new Pelicula("Encanto",2023);
         miPelicula.setDuracionEnMinutos(120);
         miPelicula.setIncludeEnElPlan(true);
         //miPelicula.muestraFichaTecnica();
@@ -21,18 +19,14 @@ public class Principal {
         //System.out.println(miPelicula.getTotalDeLasEvaluaciones());
         //System.out.println(miPelicula.calculaMedia());
 
-        Serie casaDragon  = new Serie();
-        casaDragon.setNombre("Casa del Dragon");
-        casaDragon.setFecheDeLanzamiento(2022);
+        Serie casaDragon  = new Serie("Casa del Dragon", 2022 );
         casaDragon.setTemporadas(1);
         casaDragon.setMinutosPorEpisodio(50);
         casaDragon.setEpisodiosPorTemporada(10);
         //casaDragon.muestraFichaTecnica();
         //System.out.println(casaDragon.getDuracionEnMinutos());
 
-        Pelicula otraPelicula = new Pelicula("Matrix");
-
-        otraPelicula.setFecheDeLanzamiento(1998);
+        Pelicula otraPelicula = new Pelicula("Matrix",1988);
         otraPelicula.setDuracionEnMinutos(180);
        // otraPelicula.muestraFichaTecnica();
 
@@ -56,9 +50,9 @@ public class Principal {
 
 
 
-        var peliculaDeBruno = new Pelicula("El semor de los anillos ");
+        var peliculaDeBruno = new Pelicula("El semor de los anillos ",2001);
         peliculaDeBruno.setDuracionEnMinutos(180);
-        peliculaDeBruno.setFecheDeLanzamiento(2001);
+
 
 
         ArrayList<Pelicula> listaDePelicualas  = new ArrayList<>();
