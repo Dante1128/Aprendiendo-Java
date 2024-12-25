@@ -5,11 +5,12 @@ import com.aluracursos.screenmacth.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmacth.calculos.FiltroRecomendacion;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Principal {
     public static void main(String[] args) {
-        Pelicula miPelicula = new Pelicula();
-        miPelicula.setNombre("Encanto");
+        Pelicula miPelicula = new Pelicula("Encanto");
+
         miPelicula.setFecheDeLanzamiento(2021);
         miPelicula.setDuracionEnMinutos(120);
         miPelicula.setIncludeEnElPlan(true);
@@ -29,8 +30,8 @@ public class Principal {
         //casaDragon.muestraFichaTecnica();
         //System.out.println(casaDragon.getDuracionEnMinutos());
 
-        Pelicula otraPelicula = new Pelicula();
-        otraPelicula.setNombre("Matrix");
+        Pelicula otraPelicula = new Pelicula("Matrix");
+
         otraPelicula.setFecheDeLanzamiento(1998);
         otraPelicula.setDuracionEnMinutos(180);
        // otraPelicula.muestraFichaTecnica();
@@ -55,8 +56,7 @@ public class Principal {
 
 
 
-        var peliculaDeBruno = new Pelicula();
-        peliculaDeBruno.setNombre("El semor de los anillos ");
+        var peliculaDeBruno = new Pelicula("El semor de los anillos ");
         peliculaDeBruno.setDuracionEnMinutos(180);
         peliculaDeBruno.setFecheDeLanzamiento(2001);
 
@@ -68,10 +68,11 @@ public class Principal {
 
         System.out.println("Tamamo de la lista: "+ listaDePelicualas.size() );
         System.out.println("La primera pelicula es: " + listaDePelicualas.get(0).getNombre());
-
         System.out.println(listaDePelicualas.toString());
-
         System.out.println("toString de la pelicula: " + listaDePelicualas.get(0).toString());
+
+
+
 
 
 
