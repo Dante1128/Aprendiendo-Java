@@ -9,6 +9,7 @@ import java.util.Objects;
 
 public class PrincipalConListas {
     public static void main(String[] args) {
+
         Pelicula miPelicula = new Pelicula("Encanto",2023);
         miPelicula.evalua(9);
         Pelicula otraPelicula = new Pelicula("Matrix",1988);
@@ -17,6 +18,8 @@ public class PrincipalConListas {
         peliculaDeBruno.evalua(8);
         Serie casaDragon  = new Serie("Casa del Dragon", 2022 );
         casaDragon.evalua(7);
+
+
 
         ArrayList<Titulo> lista = new ArrayList<>();
         lista.add(miPelicula);
@@ -27,10 +30,13 @@ public class PrincipalConListas {
         lista.add(casaDragon);
 
         for (Titulo item: lista) {
-            System.out.println(item);
-            Pelicula pelicula = (Pelicula) item;
+            System.out.println(item.getNombre());
+            if (item instanceof Pelicula pelicula && pelicula.getClasificacion() > 2) {
 
-            System.out.println(pelicula.getClasificacion());
+                System.out.println(pelicula.getClasificacion());
+
+            }
+
 
         }
     }
