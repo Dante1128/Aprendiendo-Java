@@ -1,3 +1,5 @@
+package com.aluracursos.principal;
+
 import com.aluracursos.screenmach.modelos.Episodio;
 import com.aluracursos.screenmach.modelos.Pelicula;
 import com.aluracursos.screenmach.modelos.Serie;
@@ -5,7 +7,6 @@ import com.aluracursos.screenmacth.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmacth.calculos.FiltroRecomendacion;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Principal {
     public static void main(String[] args) {
