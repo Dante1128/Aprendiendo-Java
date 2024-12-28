@@ -5,6 +5,8 @@ import com.aluracursos.screenmach.modelos.Serie;
 import com.aluracursos.screenmach.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Objects;
 
 public class PrincipalConListas {
@@ -39,5 +41,19 @@ public class PrincipalConListas {
 
 
         }
+        ArrayList<String> listaDeArtistas = new ArrayList<>();
+        listaDeArtistas.add("Penelope Cruz");
+        listaDeArtistas.add("Atonio Banderas");
+        listaDeArtistas.add("Ricardo Darin");
+
+        System.out.println(listaDeArtistas);
+
+        Collections.sort(listaDeArtistas);
+        System.out.println("Lista de Artistas  ordenada: " +listaDeArtistas);
+
+        Collections.sort(lista);
+        System.out.println("Lista ordenada de titulos" + lista);
+
+
     }
 }
