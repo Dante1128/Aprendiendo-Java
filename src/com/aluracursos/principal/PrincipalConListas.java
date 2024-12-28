@@ -4,10 +4,7 @@ import com.aluracursos.screenmach.modelos.Pelicula;
 import com.aluracursos.screenmach.modelos.Serie;
 import com.aluracursos.screenmach.modelos.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Objects;
+import java.util.*;
 
 public class PrincipalConListas {
     public static void main(String[] args) {
@@ -53,6 +50,12 @@ public class PrincipalConListas {
 
         Collections.sort(lista);
         System.out.println("Lista ordenada de titulos" + lista);
+
+        lista.sort(Comparator.comparing(Titulo::getFecheDeLanzamiento));
+        System.out.println("Lista ordenada por fecha" + lista);
+
+
+
 
 
     }
